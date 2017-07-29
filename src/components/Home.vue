@@ -1,19 +1,12 @@
 <template>
-<div class="hello">
+<div class="home">
 
-  <section v-scroll-reveal>
-    <h1>Scroll down!</h1>
-  </section>
-
-  <section v-scroll-reveal>
-    <h1>Tada!</h1>
-  </section>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'home',
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',

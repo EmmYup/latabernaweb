@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logoT.png" alt="laTaberna">
+      </a>
+    </nav>
     <router-view></router-view>
   </div>
 </template>
@@ -12,12 +16,77 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  src: url("../static/Montserrat-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url("../static/Montserrat-ExtraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url("../static/Montserrat-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../static/Montserrat-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: url("../static/Montserrat-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url("../static/Montserrat-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url("../static/Montserrat-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  src: url("../static/Montserrat-ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  src: url("../static/Montserrat-Black.otf") format("opentype");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-light {
+  background: transparent;
+  border: 0;
+}
+.navbar-brand img {
+  width: 160px;
+}
+
+.clear-20 {
+    height: 20px;
+    display: block;
+}
+
+.clear-30 {
+  height: 30px;
+  display: block;
+}
+
+.decoration {
+position: absolute;
+z-index: 100;
 }
 </style>
