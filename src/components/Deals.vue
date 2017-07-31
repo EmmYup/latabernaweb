@@ -6,7 +6,7 @@
             <div class="deals-text">
               <span>{{ dealsTitle1 }}</span> <br>
               <span class="text1">{{ dealsTitle2 }}</span> <br>
-              <span class="text2">{{ dealsTitle3 }}</span> <br>
+              <span class="text2">{{ dealsTitle3 }}</span>
             </div>
           </div>
           <!-- TODO: agregar el carousel para las promociones -->
