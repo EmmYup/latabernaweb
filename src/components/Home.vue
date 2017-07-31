@@ -1,16 +1,16 @@
 <template>
 <div class="home">
-
+  <deals></deals>
 </div>
 </template>
 
 <script>
+import Deals from './Deals';
+
 export default {
   name: 'home',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
+  components: {
+    Deals,
   },
 };
 </script>
