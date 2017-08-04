@@ -1,33 +1,48 @@
 <template>
 <div id="slide">
-    <b-carousel :controls="false" :indicators="false" :interval="4000" background="black">
-      <b-carousel-slide>
-        <img src="../assets/slider1.jpg" alt="">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img src="../assets/slider1.jpg" alt="">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img src="../assets/slider1.jpg" alt="">
-      </b-carousel-slide>
-    </b-carousel>
+  <slick :options="slickOptions">
+    <img src="../assets/slider1.jpg" alt="">
+    <img src="../assets/slider1.jpg" alt="">
+    <img src="../assets/slider1.jpg" alt="">
+    <img src="../assets/slider1.jpg" alt="">
+  </slick>
 </div>
 </template>
 
 <script>
+import Slick from 'vue-slick';
+
 export default {
   name: 'slide',
+  components: {
+    Slick,
+  },
+  data() {
+    return {
+      slickOptions: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      },
+    };
+  },
+  methods: {
+    next() {
+      this.$refs.slick.next();
+    },
+    prev() {
+      this.$refs.slick.prev();
+    },
+    reInit() {
+      this.$refs.slick.reSlick();
+    },
+  },
 };
 </script>
 
 <style scoped>
-#slide b-carousel-slide {
-  text-align: center;
-}
 
-#slide img {
-  height: auto;
-  width: auto;
-  margin-left: 10px
-}
 </style>

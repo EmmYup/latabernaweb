@@ -16,6 +16,7 @@ selenium-debug.log
 
 #Images
 *.png
+*.jpg
 
 #Fonts
 *.otf

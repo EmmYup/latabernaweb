@@ -4,8 +4,10 @@ import BootstrapVue from 'bootstrap-vue';
 import Vuelidate from 'vuelidate';
 import VueAnalytics from 'vue-analytics';
 import VueScrollReveal from 'vue-scroll-reveal';
+import Slick from 'vue-slick';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'slick-carousel/slick/slick.css';
 
 // Relative Imports
 // The Vue build version to load with the `import` command
@@ -21,6 +23,7 @@ Vue.use(vueResource);
 Vue.use(BootstrapVue);
 Vue.use(VueScrollReveal);
 Vue.use(Vuelidate);
+Vue.use(Slick);
 Vue.use(VueAnalytics, {
   id: 'UA-XXX-X',
 });
