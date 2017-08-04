@@ -31,10 +31,6 @@ export default {
 
 <style scoped>
 #deals {
-  margin-top: 40px;
-}
-
-#deals {
   background: url('../assets/promocion-fondo.png');
   padding: 40px 0;
 }

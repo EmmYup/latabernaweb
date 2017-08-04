@@ -69,7 +69,13 @@ body {
 
 .navbar-light {
   background: transparent;
-  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 .navbar-brand img {
   width: 160px;
@@ -88,5 +94,11 @@ body {
 .decoration {
 position: absolute;
 z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    z-index: 1001;
+  }
 }
 </style>
