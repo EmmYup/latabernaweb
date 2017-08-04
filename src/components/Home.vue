@@ -3,6 +3,7 @@
   <slide></slide>
   <deals></deals>
   <about></about>
+  <dishes></dishes>
 </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Slide from './Slide';
 import Deals from './Deals';
 import About from './About';
+import Dishes from './Dishes';
 
 export default {
   name: 'home',
@@ -17,6 +19,7 @@ export default {
     Slide,
     Deals,
     About,
+    Dishes,
   },
 };
 </script>

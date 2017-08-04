@@ -6,12 +6,23 @@
       </a>
     </nav>
     <router-view></router-view>
+    <footerGeneral></footerGeneral>
   </div>
 </template>
 
 <script>
+import footerGeneral from './components/global/FooterGeneral';
+
 export default {
   name: 'app',
+  components: {
+    footerGeneral,
+  },
+  data() {
+    return {
+
+    };
+  },
 };
 </script>
 
@@ -101,4 +112,5 @@ z-index: 100;
     z-index: 1001;
   }
 }
+
 </style>
