@@ -59,9 +59,9 @@
         facebookUrl: 'https://www.facebook.com/pg/latabernacancun/reviews/',
         tripadvisorUrl: 'https://www.tripadvisor.com.mx/UserReviewEdit-g150807-d3750726-ehttp:__2F____2F__www__2E__tripadvisor__2E__com__2E__mx__2F__Restaurant__5F__Review__2D__g150807__2D__d3750726__2D__Reviews__2D__La__5F__Taberna__5F__de__5F__Los__5F__Amigos__2D__Cancun__5F__Yucatan__5F__Peninsula__2E__html-La_Taberna_de_Los_Amigos-Cancun_Yucatan_Peninsula.html',
         steps: [
-          new Steps('llena', 'Llena solicitud', '1.- llena nuestra solicitud.'),
-          new Steps('espera', 'Espera llamada', '2.- espera nuestra llamada.'),
-          new Steps('entrevista', 'Acude a la entrevista', '3.- asiste a tu entrevista.'),
+          new Steps('llena', 'Llena solicitud', '1.- Llena nuestra solicitud.'),
+          new Steps('espera', 'Espera llamada', '2.- Espera nuestra llamada.'),
+          new Steps('entrevista', 'Acude a la entrevista', '3.- Asiste a tu entrevista.'),
         ],
       };
     },
@@ -85,6 +85,12 @@
   min-height: 523px;
 }
 
+#job p {
+  font-size: 19px;
+  font-weight: 500;
+  color: #155b73;
+  line-height: 22px;
+}
 .decoration .champions {
   left: 0;
   top: 115px;
