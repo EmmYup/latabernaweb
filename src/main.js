@@ -5,9 +5,11 @@ import Vuelidate from 'vuelidate';
 import VueAnalytics from 'vue-analytics';
 import VueScrollReveal from 'vue-scroll-reveal';
 import Slick from 'vue-slick';
+import Icon from 'vue-awesome/components/Icon';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'slick-carousel/slick/slick.css';
+import 'vue-awesome/icons';
 
 // Relative Imports
 // The Vue build version to load with the `import` command
@@ -27,6 +29,7 @@ Vue.use(Slick);
 Vue.use(VueAnalytics, {
   id: 'UA-XXX-X',
 });
+Vue.component('icon', Icon);
 Vue.use(require('vue-moment'));
 
 /* eslint-disable no-new */

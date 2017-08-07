@@ -6,17 +6,14 @@
       </a>
     </nav>
     <router-view></router-view>
-    <footerGeneral></footerGeneral>
   </div>
 </template>
 
 <script>
-import footerGeneral from './components/global/FooterGeneral';
 
 export default {
   name: 'app',
   components: {
-    footerGeneral,
   },
   data() {
     return {
@@ -99,6 +96,11 @@ body {
 
 .clear-30 {
   height: 30px;
+  display: block;
+}
+
+.clear-15 {
+  height: 15px;
   display: block;
 }
 
