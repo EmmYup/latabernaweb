@@ -5,6 +5,7 @@
   <about></about>
   <!-- <dishes></dishes> -->
   <job></job>
+  <locations></locations>
 </div>
 </template>
 
@@ -14,6 +15,7 @@ import Deals from './Deals';
 import About from './About';
 import Dishes from './Dishes';
 import Job from './Job';
+import Locations from './Locations';
 
 export default {
   name: 'home',
@@ -23,6 +25,7 @@ export default {
     About,
     Dishes,
     Job,
+    Locations,
   },
 };
 </script>

@@ -104,6 +104,19 @@ body {
   display: block;
 }
 
+.clear-60 {
+  height: 60px;
+  display: block;
+}
+
+.font-19 {
+  font-size: 19px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
 .decoration {
 position: absolute;
 z-index: 100;

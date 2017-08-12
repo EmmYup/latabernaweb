@@ -1,16 +1,22 @@
 <template>
 <div id="slide">
   <slick :options="slickOptions">
-    <img src="../assets/slider1.jpg" alt="">
-    <img src="../assets/slider1.jpg" alt="">
-    <img src="../assets/slider1.jpg" alt="">
-    <img src="../assets/slider1.jpg" alt="">
+    <div class="" v-for="slide in sliders">
+      <img :src="getImgUrl(slide.image)" :alt="getAlt(slide.alt)">
+    </div>
   </slick>
 </div>
 </template>
 
 <script>
 import Slick from 'vue-slick';
+
+class Slider {
+  constructor(image, alt) {
+    this.image = image;
+    this.alt = alt;
+  }
+}
 
 export default {
   name: 'slide',
@@ -21,28 +27,30 @@ export default {
     return {
       slickOptions: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
       },
+      sliders: [
+        new Slider('1', 'Pelea'),
+        new Slider('2', 'Chicharito'),
+      ],
     };
   },
   methods: {
-    next() {
-      this.$refs.slick.next();
+    getImgUrl(img) {
+      const images = require.context('../assets/sliders/', false, /\.png$/);
+      return images(`./${img}.png`);
     },
-    prev() {
-      this.$refs.slick.prev();
-    },
-    reInit() {
-      this.$refs.slick.reSlick();
+    getAlt(alt) {
+      return alt;
     },
   },
 };
 </script>
 
 <style scoped>
-
+.slick-slide img {
+  width: 100%;
+}
 </style>
