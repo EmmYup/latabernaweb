@@ -4,7 +4,7 @@
     <img class="decoration bat hidden-sm-down" src="../assets/bat.png" alt="batLaTaberna">
     <div class="container">
       <div class="row">
-        <img src="../assets/chica.png" alt="chicaTaberna" class="about-girl hidden-sm-down">
+        <img src="../assets/tabertubo.png" alt="chicaTaberna" class="tube hidden-sm-down">
         <div class="col-md-6 col-lg-6"></div>
         <div class="col-md-6 col-lg-6">
           <div class="clear-30"></div>
@@ -159,11 +159,12 @@ export default {
   filter: brightness(1.1);
 }
 
-#about .about-girl {
+#about .tube {
   position: absolute;
-  left: -142px;
-  bottom: -30px;
-  width: 50%;
+  left: 200px;
+  bottom: -42px;
+  width: 24%;
+  height: 117%;
 }
 
 #about .pele {
@@ -201,7 +202,7 @@ export default {
 }
 
 @media only screen and (min-width: 1400px) {
-  .about-girl {
+  .tube {
     width: 40%;
   }
 }

@@ -3,7 +3,7 @@
   <slide></slide>
   <deals></deals>
   <about></about>
-  <!-- <dishes></dishes> -->
+  <dishes></dishes>
   <job></job>
   <locations></locations>
 </div>

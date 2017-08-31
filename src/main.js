@@ -4,8 +4,8 @@ import BootstrapVue from 'bootstrap-vue';
 import Vuelidate from 'vuelidate';
 import VueAnalytics from 'vue-analytics';
 import VueScrollReveal from 'vue-scroll-reveal';
-import Slick from 'vue-slick';
 import Icon from 'vue-awesome/components/Icon';
+import 'jquery/dist/jquery.min';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'slick-carousel/slick/slick.css';
@@ -25,7 +25,6 @@ Vue.use(vueResource);
 Vue.use(BootstrapVue);
 Vue.use(VueScrollReveal);
 Vue.use(Vuelidate);
-Vue.use(Slick);
 Vue.use(VueAnalytics, {
   id: 'UA-XXX-X',
 });
@@ -37,5 +36,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App, Slick },
+  components: { App },
 });

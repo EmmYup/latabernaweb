@@ -29,11 +29,11 @@ export default {
         slidesToShow: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
       },
       sliders: [
-        new Slider('1', 'Pelea'),
-        new Slider('2', 'Chicharito'),
+        new Slider('2', 'Septiembre'),
+        new Slider('1', 'Chicharito'),
       ],
     };
   },

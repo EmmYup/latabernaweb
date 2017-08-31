@@ -9,7 +9,7 @@
           <a :href="facebookUrl" target="_blank" class="facebook">
             <icon name="facebook" aria-hidden="true" class="social" scale="2"></icon>
             <span>4.3</span>
-            <icon name="star" aria-hidden="true" class="star" scale=""></icon>
+            <icon name="star" aria-hidden="true" class="star"></icon>
           </a>
           <a :href="tripadvisorUrl" target="_blank" class="tripadvisor">
             <icon name="tripadvisor" aria-hidden="true" class="social

@@ -35,20 +35,20 @@
         {{ hashtag }}
       </div>
     </div>
-    <googleMap></googleMap>
+    <googleMaps></googleMaps>
     <footerGeneral></footerGeneral>
   </div>
 </template>
 
 <script>
 import footerGeneral from './global/FooterGeneral';
-import googleMap from './global/GoogleMap';
+import googleMaps from './global/GoogleMaps';
 
 export default {
   name: 'locations',
   components: {
     footerGeneral,
-    googleMap,
+    googleMaps,
   },
   data() {
     return {

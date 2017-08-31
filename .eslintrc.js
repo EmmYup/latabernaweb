@@ -23,9 +23,15 @@ module.exports = {
       }
     }
   },
+  "globals": {
+   "$": true,
+   "jQuery": true
+ },
   // add your custom rules here
   'rules': {
     // don't require .vue extension when importing
+     "no-console": 0,
+     "no-param-reassign": 0,
     'import/extensions': ['error', 'always', {
       'js': 'never',
       'vue': 'never'
