@@ -8,7 +8,7 @@
         <h1> &nbsp; La Taberna de los Amigos</h1>
       </div>
       <div class="links-footer">
-        <a href="#">Política de Privacidad</a> | &nbsp;<a href="#">Política de Cancelaciones</a>
+        <a href="https://lataberna.com.mx/politicas-de-privacidad" target="_blank">Política de Privacidad</a> | &nbsp;<a href="https://lataberna.com.mx/politicas-de-cancelacion" target="_blank">Política de Cancelaciones</a>
       </div>
     </div>
   </footer>
