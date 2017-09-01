@@ -1,6 +1,16 @@
 <template>
-  <div id="app" :class="{ sidenavOpen: isOpen }">
-    <div class="container nav-container">
+  <div id="app">
+    <div class="nav-menu">
+        <a href="#">
+          <img src="./assets/logoT.png" alt="La taberna de los amigos">
+        </a>
+        <button class="hamburger hamburger--squeeze" :class="{ isActive: isActive }" type="button" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+    </div>
+    <!-- <div class="container nav-container">
       <div class="row">
         <div class="col-md-11">
           <nav class="navbar navbar-light bg-faded">
@@ -10,28 +20,28 @@
           </nav>
         </div>
         <div class="col-md-1">
-          <button class="hamburger hamburger--squeeze " type="button" :class="{ isActive: isActive }" @click="isOpen = !isOpen; isActive = !isActive">
+          <button class="hamburger hamburger--squeeze " type="button" :class="{ isActive: isActive }" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span class="hamburger-box">
               <a><span class="hamburger-inner"></span></a>
             </span>
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="sidenav">
       <div class="row">
         <div class="col-md-4 col-sm-6">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>eventos</span>
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>tabersemana</span>
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>menú<br>ejecutivo</span>
           </a>
         </div>
@@ -39,17 +49,17 @@
       <div class="clear-15"></div>
       <div class="row">
         <div class="col-md-4 col-sm-6">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>nuestra<br>historia</span>
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>menú</span>
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>contacto</span>
           </a>
         </div>
@@ -57,13 +67,13 @@
       <div class="clear-15"></div>
       <div class="row">
         <div class="col-md-12 col-sm-12">
-          <a href="#" @click="isOpen = !isOpen; isActive = !isActive">
+          <a href="#" @click="sidenavOpen = !sidenavOpen; isActive = !isActive">
             <span>bolsa de trabajo</span>
           </a>
         </div>
       </div>
     </div>
-    <div class="overlay-sidenav" @click="isOpen = !isOpen; isActive = !isActive"></div>
+    <div class="overlay-sidenav" @click="sidenavOpen = !sidenavOpen; isActive = !isActive"></div>
     <router-view></router-view>
   </div>
 </template>
@@ -76,7 +86,6 @@ export default {
   },
   data() {
     return {
-      isOpen: false,
       isActive: false,
     };
   },
@@ -135,7 +144,7 @@ body {
   overflow-x: hidden;
 }
 
-.nav-container{
+.nav-menu {
   background: transparent;
   position: fixed;
   top: 0;
@@ -146,19 +155,23 @@ body {
   z-index: 1000;
 }
 
-.navbar-light {
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  padding: 10px 20px;
-  z-index: 1000;
-}
-
-.navbar-brand img {
+.nav-menu img {
   width: 160px;
+}
+
+.nav-menu.nav-solid {
+  background-color: #155b73;
+}
+
+.nav-menu img {
+  width: 160px;
+}
+
+.nav-menu button {
+  float: right;
+  margin-top: 20px;
+  outline: none !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {

@@ -1271,6 +1271,10 @@ concat-stream@1.6.0, concat-stream@^1.5.2:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+conekta.js@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/conekta.js/-/conekta.js-0.5.0.tgz#2010377cf52d7cd110c994b1451961b0a80ff9ed"
+
 config-chain@~1.1.5:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/config-chain/-/config-chain-1.1.11.tgz#aba09747dfbe4c3e70e766a6e41586e1859fc6f2"
